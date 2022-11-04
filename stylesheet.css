@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .container{margin: auto;}
@@ -48,6 +49,9 @@ p{
     z-index: 999;
     width: 100%;
 }
+.header__navbar h1 a{
+  font-size: 24px;
+}
 .toggle,
 [id^=drop] {
 	display: none;
@@ -56,6 +60,11 @@ nav {
 	margin:0;
 	padding: 0;
 	background-color: #000;
+}
+.navbar__logo{padding-top: 15px;}
+.navbar__logo a{
+  padding: 10px 20px 0px;
+  color: #fff;
 }
 .navbar__logo span{color: red;}
 nav:after {
@@ -68,25 +77,30 @@ nav ul {
 	padding:0;
 	margin:0;
 	list-style: none;
-	}
+}
+nav .menu{
+  position: relative;
+  top: -20px;
+}
 nav ul li {
 	margin: 0px;
 	display:inline-block;
 }
 nav ul li a:hover{
-  border-bottom: 3px solid red;
+  color: #fff;
+    border-bottom: 3px solid #f33f3f;
 }
-nav a {
+nav .menu a {
 	display:block;
-	padding:10px 20px;	
+	padding:10px 20px 0;	
 	color:#FFF;
 	font-size:17px;
 	text-decoration:none;
 }
-.navbar__logo a{
+/* .navbar__logo a{
   position: relative;
   top: 25px;
-}
+} */
 /* Media Queries
 --------------------------------------------- */
 
@@ -233,8 +247,8 @@ img {vertical-align: middle;}
 .product-heading{
     margin-bottom: 60px;
     border-bottom: 1px solid #eee;
-    text-align: left;
-    padding: 60px 0px 0px;
+    text-align: center;
+    padding: 10px 0px 10px;
 }
 .product-heading h2{
     color: #1e1e1e;
@@ -386,7 +400,104 @@ img {vertical-align: middle;}
   color: #f33f3f;
   margin-left: 3px;
 }
+/* ==================================PRODUCT PAGE CSS======================================== */
+.products-heading {
+	background-image: url(../images/products-heading.jpg);
+}
 
+.about-heading {
+	background-image: url(../images/about-heading.jpg);
+}
+
+.contact-heading {
+	background-image: url(../images/contact-heading.jpg);
+}
+.page-heading .text{
+  padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    /* top: 50%; */
+    text-align: center;
+    /* margin-top: -70px; */
+}
+.page-heading {
+	padding: 210px 50px 130px 0px;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page-heading .text-content h4 {
+	color: #f33f3f;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.page-heading .text-content h2 {
+	color: #fff;
+	font-size: 62px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+.products {
+	margin-top: 100px;
+}
+
+.products{
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 60px;
+}
+
+.product-heading ul li {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	color: #121212;
+	display: inline-block;
+	margin: 0px 10px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.product-heading ul li.active,
+.product-heading ul li:hover {
+  color: #f33f3f;
+}
+
+.products ul.pages {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.products ul.pages li {
+	display: inline-block;
+	margin: 0px 2px;
+}
+
+.products ul.pages li a {
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	line-height: 42px;
+	border: 1px solid #eee;
+	font-size: 15px;
+	font-weight: 700;
+	color: #121212;
+	transition: all .3s;
+}
+
+.products ul.pages li a:hover,
+.products ul.pages li.active a {
+	background-color: #f33f3f;
+	border-color: #f33f3f;
+	color: #fff;
+}
+/* =============================================PRODUCT PAGE CSS END===================================================== */
 /* FOOTER CSS END */
 
 /* ================================= 
