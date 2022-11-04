@@ -402,15 +402,15 @@ img {vertical-align: middle;}
 }
 /* ==================================PRODUCT PAGE CSS======================================== */
 .products-heading {
-	background-image: url(../images/products-heading.jpg);
+	background-image: url(images/products-heading.jpg);
 }
 
 .about-heading {
-	background-image: url(../images/about-heading.jpg);
+	background-image: url(images/about-heading.jpg);
 }
 
 .contact-heading {
-	background-image: url(../images/contact-heading.jpg);
+	background-image: url(images/contact-heading.jpg);
 }
 .page-heading .text{
   padding: 8px 12px;
